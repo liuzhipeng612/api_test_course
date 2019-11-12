@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="1" name="pytest" skipped="0" tests="21" time="233.919"><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list0]" time="53.199"><system-out>已注册的手机号码,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list1]" time="7.600"><system-out>未注册的手机号码,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list2]" time="6.965"><system-out>手机号码为空,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list3]" time="7.133"><system-out>不满足11位的数字,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list4]" time="7.002"><system-out>满足11位的非手机号码数字,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list5]" time="7.115"><system-out>超过11位的手机号码,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list6]" time="6.981"><system-out>手机号码填写非数字,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list7]" time="50.500"><system-out>与手机号匹配的密码登录,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list8]" time="7.635"><system-out>与手机号不匹配的密码登录,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_02_login.TestLogin" file="case\test_02_login.py" line="24" name="test_login[case_list9]" time="9.538"><system-out>密码为空,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list0]" time="37.832"><system-out>输入0进行投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list1]" time="2.308"><system-out>输入非10整数倍非100整数倍,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list2]" time="3.010"><system-out>输入10进行投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list3]" time="2.940"><system-out>输入10的整数倍非100整数倍,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list4]" time="2.975"><system-out>输入100进行投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list5]" time="2.877"><system-out>输入负数进行投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list6]" time="3.140"><system-out>输入小数进行投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list7]" time="2.378"><system-out>输入非数字进行投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list8]" time="3.028"><system-out>输入小于余额的金额投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list9]" time="3.204"><system-out>输入大于余额的金额投标,执行结果为:pass
+</system-out></testcase><testcase classname="case.test_03_did.TestDid" file="case\test_03_did.py" line="24" name="test_did[case_list10]" time="5.394"><failure message="AssertionError: assert &apos;购买标的金额不能大于标总金额&apos; == &apos;投标金额大于可用金额&apos;
+  - 购买标的金额不能大于标总金额
+  + 投标金额大于可用金额">self = &lt;python_full_stack_automation_test_engineer.web_test.pytest_project.case.test_03_did.TestDid object at 0x00000236A3B1CA90&gt;
+case_list = {&apos;amount&apos;: &apos;1234567890987654321&apos;, &apos;assert_element&apos;: {&apos;bullet_box_prompt_element&apos;: {&apos;element&apos;: &apos;.layui-layer-content&gt;.text-center&apos;, &apos;locator&apos;: &apos;css&apos;}}, &apos;expected&apos;: &apos;购买标的金额不能大于标总金额&apos;, &apos;title&apos;: &apos;输入大于借款金额的金额投标&apos;}
+
+    @pytest.mark.parametrize(&quot;case_list&quot;, case_suite)
+    def test_did(self, case_list):
+    
+        # 执行投资
+        did_page.did(case_list[&quot;amount&quot;])
+    
+        # 激活did_page自动生成did_page的类属性
+        assert_suite()
+    
+        # 获取did_data的断言元素的定位
+        c: dict = case_list[&quot;assert_element&quot;]
+        c.items()
+        for d in c.values():
+            ee = d[&quot;element&quot;]
+    
+        # 确认当前用例断言元素的定位，执行对应的获取断言方法
+        if ee == getattr(did_page, &quot;popup_prompt_element&quot;)[&quot;element&quot;]:
+            actual = did_page.get_popup_prompt_element()
+            did_page.click_confirm_popup()
+        elif ee == getattr(did_page, &quot;vote_button_element&quot;)[&quot;element&quot;]:
+            actual = did_page.get_vote_button_element()
+        elif ee == getattr(did_page, &quot;successful_bidding&quot;)[&quot;element&quot;]:
+            actual = did_page.get_successful_bidding()
+            did_page.click_close_success_popup()
+        else:
+            pass
+        expected = case_list[&quot;expected&quot;]
+        msg = case_list[&quot;title&quot;]
+        true_result = &quot;pass&quot;
+        fail_result = &quot;fail&quot;
+&gt;       assert expected == actual
+E       AssertionError: assert &apos;购买标的金额不能大于标总金额&apos; == &apos;投标金额大于可用金额&apos;
+E         - 购买标的金额不能大于标总金额
+E         + 投标金额大于可用金额
+
+case\test_03_did.py:55: AssertionError</failure></testcase></testsuite>

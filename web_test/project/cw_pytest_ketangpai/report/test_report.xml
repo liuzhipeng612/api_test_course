@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skipped="0" tests="1" time="23.395"><testcase classname="case.test_02_exit.TestExit" file="case\test_02_exit.py" line="16" name="test_exit[case_list0]" time="17.828"></testcase></testsuite>

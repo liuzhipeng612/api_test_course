@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非诚勿扰</title>
+    <style>
+        .content {
+            height: auto;
+            width: 500px;
+            margin: 0 auto;
+            border: 2px solid red;
+        }
+
+        .inner {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="inner">
+        <h1 style="color: red">选美大赛</h1>
+        <form>
+            Python 19期最靓的仔/妹:刀刀<br/>
+            <input name="username" placeholder="请输入姓名" type="text">
+            <br/>
+            <br/>
+            性别：<br/>
+            <input name="gender" type="radio" value="male">男<br/>
+            <input checked name="gender" type="radio" value="male">女<br/>
+            <input name="gender" type="radio" value="male">不详<br/>
+            <br/>
+            <br/>
+            兴趣爱好：<br/>
+            <input name="hobby" type="checkbox">逛街<br/>
+            <input name="hobby" type="checkbox">看电影<br/>
+            <input name="hobby" type="checkbox">敲代码<br/>
+            <input name="hobby" type="checkbox">敲代码<br/>
+            <br/>
+            <br/>
+            <input name="myfile" type="file">
+            <br/>
+            <br/>
+            仔柠檬班学了哪些课程？<br/>
+            <select name="courses">
+                <option value="全程班">全程班</option>
+                <option value="Python自动化">Python自动化</option>
+                <option value="Java自动化">Java自动化</option>
+                <option value="Python测试开发">Python测试开发</option>
+                <option disabled value="Java测试开发">Java测试开发</option>
+            </select>
+            <br/>
+            <br/>
+            仔柠檬班学了哪些课程？<br/>
+            <select multiple name="courses">
+                <option value="全程班">全程班</option>
+                <option value="Python自动化">Python自动化</option>
+                <option value="Java自动化">Java自动化</option>
+                <option value="Python测试开发">Python测试开发</option>
+                <option disabled value="Java测试开发">Java测试开发</option>
+            </select>
+            <br/>
+            <br/>
+            <input type="submit" value="提交">
+            <input type="submit" value="取消">
+        </form>
+    </div>
+</div>
+</body>
+</html>

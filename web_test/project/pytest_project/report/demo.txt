@@ -1,0 +1,60 @@
+. case/test_02_login.py::TestLogin::test_login[case_list0]
+. case/test_02_login.py::TestLogin::test_login[case_list1]
+. case/test_02_login.py::TestLogin::test_login[case_list2]
+. case/test_02_login.py::TestLogin::test_login[case_list3]
+. case/test_02_login.py::TestLogin::test_login[case_list4]
+. case/test_02_login.py::TestLogin::test_login[case_list5]
+. case/test_02_login.py::TestLogin::test_login[case_list6]
+. case/test_02_login.py::TestLogin::test_login[case_list7]
+. case/test_02_login.py::TestLogin::test_login[case_list8]
+. case/test_02_login.py::TestLogin::test_login[case_list9]
+. case/test_03_did.py::TestDid::test_did[case_list0]
+. case/test_03_did.py::TestDid::test_did[case_list1]
+. case/test_03_did.py::TestDid::test_did[case_list2]
+. case/test_03_did.py::TestDid::test_did[case_list3]
+. case/test_03_did.py::TestDid::test_did[case_list4]
+. case/test_03_did.py::TestDid::test_did[case_list5]
+. case/test_03_did.py::TestDid::test_did[case_list6]
+. case/test_03_did.py::TestDid::test_did[case_list7]
+. case/test_03_did.py::TestDid::test_did[case_list8]
+. case/test_03_did.py::TestDid::test_did[case_list9]
+F case/test_03_did.py::TestDid::test_did[case_list10]
+ self = <python_full_stack_automation_test_engineer.web_test.pytest_project.case.test_03_did.TestDid object at 0x00000236A3B1CA90>
+ case_list = {'amount': '1234567890987654321', 'assert_element': {'bullet_box_prompt_element': {'element': '.layui-layer-content>.text-center', 'locator': 'css'}}, 'expected': '购买标的金额不能大于标总金额', 'title': '输入大于借款金额的金额投标'}
+ 
+     @pytest.mark.parametrize("case_list", case_suite)
+     def test_did(self, case_list):
+     
+         # 执行投资
+         did_page.did(case_list["amount"])
+     
+         # 激活did_page自动生成did_page的类属性
+         assert_suite()
+     
+         # 获取did_data的断言元素的定位
+         c: dict = case_list["assert_element"]
+         c.items()
+         for d in c.values():
+             ee = d["element"]
+     
+         # 确认当前用例断言元素的定位，执行对应的获取断言方法
+         if ee == getattr(did_page, "popup_prompt_element")["element"]:
+             actual = did_page.get_popup_prompt_element()
+             did_page.click_confirm_popup()
+         elif ee == getattr(did_page, "vote_button_element")["element"]:
+             actual = did_page.get_vote_button_element()
+         elif ee == getattr(did_page, "successful_bidding")["element"]:
+             actual = did_page.get_successful_bidding()
+             did_page.click_close_success_popup()
+         else:
+             pass
+         expected = case_list["expected"]
+         msg = case_list["title"]
+         true_result = "pass"
+         fail_result = "fail"
+ >       assert expected == actual
+ E       AssertionError: assert '购买标的金额不能大于标总金额' == '投标金额大于可用金额'
+ E         - 购买标的金额不能大于标总金额
+ E         + 投标金额大于可用金额
+ 
+ case\test_03_did.py:55: AssertionError

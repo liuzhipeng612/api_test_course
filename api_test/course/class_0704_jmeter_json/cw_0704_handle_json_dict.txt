@@ -1,0 +1,4 @@
+{"status":1,"code":10001,"data":null,"msg":"登录成功"}
+{'name': '刀刀', 'height': 173, 'age': None, None: True}
+[{"status":0,"code":10007,"data":null,"msg":"登录失败"},{"name": "树树", "height": 166, "age": null, "null": "True"}]
+{"name": "树树", "height": 166, "age": 18, "年轻人": "True"}

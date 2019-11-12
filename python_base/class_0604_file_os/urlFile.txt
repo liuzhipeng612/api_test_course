@@ -1,0 +1,2 @@
+url:http://test.lemonban.com/futureloan/mvc/api/member/register@mobile:18866668888@pwd:123456
+url:http://test.lemonban.com/futureloan/mvc/api/member/recharge@mobile:18866668888@amount:1000

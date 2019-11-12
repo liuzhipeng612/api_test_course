@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非诚勿扰</title>
+    <style>
+        .content {
+            height: auto;
+            width: 500px;
+            margin: 0 auto;
+            border: 2px solid red;
+        }
+
+        .inner {
+            margin: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th:hover {
+            color: #dddddd;
+        }
+
+        th {
+            height: 40px;
+            background-color: burlywood;
+        }
+
+        #inner {
+
+        }
+
+        tr:hover {
+            background-color: #dddddd;
+        }
+
+        td {
+            height: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="inner" id="inner">
+        <h1 style="color: red">选美大赛</h1>
+        <form>
+            Python 19期最靓的仔/妹:刀刀<br/>
+            <input name="username" placeholder="请输入姓名" type="text">
+            <br/>
+            <br/>
+            性别：<br/>
+            <input name="gender" type="radio" value="male">男<br/>
+            <input checked name="gender" type="radio" value="male">女<br/>
+            <input name="gender" type="radio" value="male">不详<br/>
+            <br/>
+            <br/>
+            兴趣爱好：<br/>
+            <input name="hobby" type="checkbox">逛街<br/>
+            <input name="hobby" type="checkbox">看电影<br/>
+            <input name="hobby" type="checkbox">敲代码<br/>
+            <input name="hobby" type="checkbox">敲代码<br/>
+            <br/>
+            <br/>
+            <input name="myfile" type="file">
+            <br/>
+            <br/>
+            仔柠檬班学了哪些课程？<br/>
+            <select name="courses">
+                <option value="全程班">全程班</option>
+                <option value="Python自动化">Python自动化</option>
+                <option value="Java自动化">Java自动化</option>
+                <option value="Python测试开发">Python测试开发</option>
+                <option disabled value="Java测试开发">Java测试开发</option>
+            </select>
+            <br/>
+            <br/>
+            仔柠檬班学了哪些课程？<br/>
+            <select multiple name="courses">
+                <option value="全程班">全程班</option>
+                <option value="Python自动化">Python自动化</option>
+                <option value="Java自动化">Java自动化</option>
+                <option value="Python测试开发">Python测试开发</option>
+                <option disabled value="Java测试开发">Java测试开发</option>
+            </select>
+            <br/>
+            <br/>
+            <input type="submit" value="提交">
+            <input type="submit" value="取消">
+        </form>
+        <br/>
+        <br/>
+        <table align="center" border="2px" cellpadding="0px" height="200px" width="300px">
+            <tr align="center">
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>得分</th>
+            </tr>
+            <tr align="center">
+                <td>诀别诗</td>
+                <td>24</td>
+                <td>86</td>
+            </tr>
+            <tr>
+                <td>爱笑</td>
+                <td>27</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Steven</td>
+                <td>22</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>刀刀</td>
+                <td>18</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <table>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>得分</th>
+            </tr>
+            <tr>
+                <td>诀别诗</td>
+                <td>24</td>
+                <td>86</td>
+            </tr>
+            <tr>
+                <td>爱笑</td>
+                <td>27</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Steven</td>
+                <td>22</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>刀刀</td>
+                <td>18</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--
+document.getElementsByTagName('H1')
+HTMLCollection [h1]0: h1length: 1__proto__: HTMLCollection
+document.getElementsByTagName('H1')[0]
+<h1 style=​"color:​ red">​选美大赛​</h1>​
+document.getElementsByTagName('H1')[0].innerText="选丑大赛"
+"选丑大赛"
+document.getElementsByTagName('H1')[0].style.color="green"
+"green"
+document
+#document<!doctype html><html lang=​"en" data-blockbyte-bs-uid=​"80350" class=​"gr__localhost">​<head>​…​</head>​<body data-gr-c-s-loaded=​"true">​…​</body>​</html>​
+document.title
+"非诚勿扰"
+document.title="不诚可扰"
+"不诚可扰"
+alert("这是一个不太美的弹窗")
+undefined
+-->
+<script>
+    h1 = document.getElementsByTagName("H1")[0];
+    h1.onclick = function () {
+        alert("选美大赛，谁与争锋？？？")
+    }
+</script>
+</body>
+</html>

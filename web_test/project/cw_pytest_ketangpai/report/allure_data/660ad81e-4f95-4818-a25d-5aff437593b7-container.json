@@ -1,0 +1,1 @@
+{"uuid": "923ea41d-238a-4ae1-a433-0840744cf671", "children": ["6d648df6-7bff-4c7e-b31d-9e307647845e"], "befores": [{"name": "init_join_class", "status": "passed", "start": 1571067456413, "stop": 1571067458775}], "afters": [{"name": "init_join_class::0", "status": "passed", "start": 1571067459673, "stop": 1571067463167}], "start": 1571067456413, "stop": 1571067463167}
